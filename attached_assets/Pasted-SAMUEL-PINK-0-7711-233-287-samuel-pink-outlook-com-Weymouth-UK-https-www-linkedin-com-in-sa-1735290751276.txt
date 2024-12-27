@@ -1,0 +1,136 @@
+SAMUEL PINK
+(0) 7711 233 287 | samuel.pink@outlook.com | Weymouth, UK
+https://www.linkedin.com/in/sampink/ | https://github.com/SamPink
+PROFESSIONAL SUMMARY
+Dynamic Lead Artificial Intelligence Systems Developer with over 6 years of experience in data
+engineering and a recent focus on AI. Expert in integrating cutting-edge AI technologies like LangChain,
+OpenAI, and Whisper into business processes. Skilled in developing natural language interfaces and real-
+time communication analysis tools, showcasing a strong ability to enhance operational efficiency through
+AI-driven solutions. Renowned for leading innovative projects, building robust stakeholder relationships,
+and delivering high-caliber, data-driven solutions within critical timelines.
+KEY SKILLS
+• Artificial Intelligence
+&
+OpenAI Technologies
+Programming
+Machine Learning
+PROFESSIONAL EXPERIENCE
+• Python • Problem Solving • Stakeholder Relations
+• Agile Methodology • Data Engineering • Data Visualization
+• Artificial Intelligence
+&
+Machine Learning
+• LangChain and
+OpenAI Technologies
+• Object Oriented
+Programming
+Ablebox | Yeovil
+Lead AI Systems Engineer
+• Developed a Text-to-Speech Interface: Led the creation of an advanced text-to-
+speech agent utilizing LangChain, RAG, and OpenAI, which acts as a natural
+language interface to the company's database, significantly enhancing data
+accessibility and user interaction.
+• Innovative Real-Time Communication Analysis: Pioneered a project using
+OpenAI's Whisper for real-time transcription and understanding of factory floor
+communications, effectively resolving machine-related issues on the spot and
+elevating operational efficiency.
+• Integration with Open Source LLMs: Demonstrated expertise in AI by
+successfully integrating and working with open-source Large Language Models
+like LLaMA and MixTRL, showcasing versatility in AI application
+development.
+• AI-Driven Process Optimization: Implemented AI technologies to revolutionize
+business processes, focusing on creating intelligent systems that improve both
+decision-making and operational workflows.
+• Leadership in AI Innovation: Played a pivotal role in researching and developing
+ground-breaking AI-based technologies, leading a team to build systems and
+architectures that align with the cutting-edge vision of AI in business.
+Markel | London, UK
+Data Engineer (Contract) August 2022 –
+September 2023
+• Developed multiple internal APIs using FastAPI and SQLAlchemy, presenting SQL database
+views and tables.
+• Spearheaded Python code development and testing processes in collaboration with product and
+data teams, ensuring timely delivery of high-quality data solutions.
+• Utilized Docker for containerization, ensuring consistent and efficient deployment of
+applications across different environments.
+• Integrated Azure Pipelines for CI/CD, automating build, test, and deployment workflows,
+resulting in streamlined development cycles and enhanced code quality.
+• Engineered and deployed 8 ETL pipelines as distinct Python scripts, facilitating data ingestion
+from external REST APIs. Transformed raw data into business-centric objects before persisting
+them into an Azure SQL database, enhancing data availability and accuracy.
+• Architected the database schema by defining a multitude of SQL tables and views, ensuring data
+integrity and ease of querying for downstream applications.
+• Built strong relationships with key stakeholders as a result of consistent communication.
+Shelby Finance Ltd | Remote, UK
+Back-end Developer (Contract) November 2021 –
+February 2022
+• Designed and deployed a Python-based Dash web application on AWS Lambda that interfaced
+with the Jira API, consolidating data from multiple teams, resulting in a more efficient data
+aggregation process.
+• Dashboard & Data Visualization: Created 10 interactive dashboards to provide insights into
+metrics such as burndown rates and story points across multiple Jira teams, enhancing team
+visibility and project tracking.
+EvolveYou | London, UK
+Data Engineer (Contract) 2022
+February 2022 – July
+• Created various reports to tracker user metrics and activity across different platforms using
+Tableau
+• Designed and deployed an API on AWS to seamlessly consolidate user statistics from multiple
+tracking platforms, facilitating a unified view of user interactions and behaviors.
+• Conducted in-depth data analysis by connecting to various analytics platforms and the
+company's SQL database. Extracted valuable insights and trends, empowering stakeholders with
+actionable data for informed decision-making.
+GSA | Dubai
+Software Engineer (Contract) May 2020 –
+November 2021
+• Launched a high-performance ETL workflow, leading to representing £100+ million in annual
+bookings.
+• Completed a machine learning project to correctly predict customer booking cancellations using
+real-time company data, which resulted in saving £1+ million annually.
+• Deployed a bespoke data engineering pipeline using Azure Container Registry.
+Personal Projects
+Developer of 'dev-gpt' - An Automated Python Developer Tool (200+ stars on GitHub)
+• Project Development: creation of 'dev-gpt,' an open-source project aimed at automating Python
+development tasks using GPT-4 technology.
+• Innovation in AI: Integrated OpenAI's GPT-4 to facilitate automated code generation,
+demonstrating an advanced application of AI in software development.
+• Community Engagement: Actively maintained the project, managing contributions from
+multiple developers and engaging with the user community to refine the tool.
+• Technical Proficiency: Demonstrated deep understanding of Python and GPT-4, showcasing
+skill in both programming and AI model utilization.
+[GitHub Repository: https://github.com/SamPink/dev-gpt]
+EDUCATION
+University of Reading (UK) | BSc in Computer Science (2:1)
+• Dissertation: Developed a machine learning model for global student accommodations to predict
+booking cancellations with 80% accuracy, offering insights that could potentially save millions
+by mitigating unforeseen cancellations.
+• Key Modules: Networking and Advanced Java Programming which involved creating a 2nd-year
+Java game and a 3rd-year C# blockchain project, GitHub links available on request.
+TECHNICAL SKILLS
+Advanced AI Technologies: LangChain, OpenAI's Whisper, LLaMA, MixTRL
+Programming: Python, .NET, FastAPI, SQLAlchemy, Pydantic
+Data Engineering: ETL Workflow, Azure SQL, MySQL, Database Design
+Cloud Computing: Azure, AWS Lambda, EC2, DynamoDB, Azure Container Registry, serverless.com
+Visualization & Reporting: Dash, Plotly, Tableau, Power BI
+DevOps & CI/CD: Docker, Azure Pipelines, TeamCity, Git
+Additional Skills: REST APIs, PowerShell, Scrum, VS Code, NoSQL, MongoDB, JSON, CSV
+ADDITIONAL PROFESSIONAL EXPERIENCE
+ProvenWorks | Reading, UK
+Junior Cloud Developer (Part-time) 2020
+October 2019 – May
+• Used the Salesforce platform to design 2D interactive graphs with PixiJS.
+• Developed a lightning application using Apex and Javascript.
+Spire Healthcare Group Plc | Reading, UK
+Business Intelligence Analyst (Permanent) September 2019
+July 2019 –
+• Worked with business intelligence and financial accounting teams to develop business solutions
+and build reports.
+• Developed Excel VBA macros used to save over 10 hours a week generating reports.
+GSA UK | London, UK
+Software Engineer (Permanent) June
+2017 – June 2019
+• Extensive work on the Azure / Office 365 platform writing PowerShell and C#.
+• Worked closely with the business to understand problems and proactively implement solutions to
+solve those problems on tasks including migrations and mergers.
+• I was tasked with automating the entire user onboarding and offboarding processes, overseeing
+Office 365 records for 1,000 users at a multi-national company.
