@@ -18,7 +18,7 @@ export default function DissertationSection() {
       <h2 className="text-2xl font-bold mb-4 glitch-effect" data-text="DISSERTATION RESEARCH">
         DISSERTATION RESEARCH
       </h2>
-      
+
       <div className="space-y-6">
         <div className="bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg">
           <h3 className="text-lg font-semibold mb-2">Machine Learning in Student Accommodation</h3>
@@ -31,7 +31,7 @@ export default function DissertationSection() {
             <Button
               variant="outline"
               className="bg-black/90 border-[#00ff00] text-[#00ff00] hover:bg-black/80"
-              onClick={() => window.open('/dissertation.pdf', '_blank')}
+              onClick={() => setShowPdf(true)}
             >
               <FileText className="w-4 h-4 mr-2" />
               View Full PDF
@@ -48,7 +48,7 @@ export default function DissertationSection() {
             <DialogTitle>Dissertation PDF</DialogTitle>
           </DialogHeader>
           <iframe
-            src="/dissertation.pdf"
+            src="/api/dissertation"
             className="w-full h-full"
             title="Dissertation PDF"
           />

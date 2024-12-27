@@ -1,5 +1,6 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
+import path from "path";
 
 export function registerRoutes(app: Express): Server {
   // Chat endpoint for CV interaction
@@ -170,6 +171,12 @@ Be friendly, professional, and precise when answering questions. Focus on releva
         details: process.env.NODE_ENV === 'development' ? (error as Error).message : undefined
       });
     }
+  });
+
+  // Serve dissertation PDF
+  app.get('/api/dissertation', (req, res) => {
+    const pdfPath = path.join(process.cwd(), 'attached_assets', 'Dissertation.pdf');
+    res.sendFile(pdfPath);
   });
 
   const httpServer = createServer(app);
