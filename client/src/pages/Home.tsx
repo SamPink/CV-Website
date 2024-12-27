@@ -8,6 +8,7 @@ import DetailModal from "@/components/DetailModal";
 import SocialLinks from "@/components/SocialLinks";
 import { Card } from "@/components/ui/card";
 import { detailedInfo, type DetailedInfo } from "@/lib/cv-data";
+import GitHubStats from "@/components/GitHubStats";
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -76,17 +77,19 @@ export default function Home() {
                     <div className="space-y-4">
                       {["AI & LLMs", "Python & FastAPI Development", "Business Process Automation", "Geospatial Data Analysis", "Cloud Architecture & ETL"].map((skill) => (
                         <div key={skill} onClick={() => handleItemClick(skill)} className="cursor-pointer hover:opacity-80">
-                          <SkillBar 
-                            skill={skill} 
-                            progress={skill === "AI & LLMs" ? 95 : 
-                                      skill === "Python & FastAPI Development" ? 92 :
-                                      skill === "Business Process Automation" ? 90 :
-                                      skill === "Geospatial Data Analysis" ? 88 : 85} 
+                          <SkillBar
+                            skill={skill}
+                            progress={skill === "AI & LLMs" ? 95 :
+                              skill === "Python & FastAPI Development" ? 92 :
+                              skill === "Business Process Automation" ? 90 :
+                              skill === "Geospatial Data Analysis" ? 88 : 85}
                           />
                         </div>
                       ))}
                     </div>
                   </Card>
+
+                  <GitHubStats />
 
                   <Card className="bg-black/50 border-[#00ff00] p-6">
                     <h2 className="text-2xl font-bold mb-4 glitch-effect" data-text="ACHIEVEMENTS">ACHIEVEMENTS</h2>
@@ -97,7 +100,7 @@ export default function Home() {
                         ["Dev-GPT Project", "• Created dev-gpt (200+ GitHub stars)"],
                         ["Geospatial Systems", "• Implemented geospatial data analysis systems"]
                       ].map(([title, preview]) => (
-                        <li 
+                        <li
                           key={title}
                           onClick={() => handleItemClick(title)}
                           className="cursor-pointer hover:text-[#00ff00] transition-colors"
@@ -130,7 +133,7 @@ export default function Home() {
         )}
       </div>
 
-      <DetailModal 
+      <DetailModal
         info={selectedInfo}
         isOpen={!!selectedInfo}
         onClose={() => setSelectedInfo(undefined)}
