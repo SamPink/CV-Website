@@ -112,6 +112,20 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
+    title: "2017-2019",
+    category: "timeline",
+    year: "2017",
+    date: "2017 - 2019",
+    content: [
+      "Software Engineer @ GSA",
+      "• 2017-2018: Full-time Software Engineer",
+      "• 2018-2019: Transitioned to part-time while studying",
+      "• Built automated data processing systems",
+      "• Foundation in Python development",
+      "• Initial exposure to data engineering"
+    ]
+  },
+  {
     title: "2018-2021: Education",
     category: "timeline",
     year: "2018",
@@ -123,20 +137,7 @@ export const detailedInfo: DetailedInfo[] = [
       "• Key Projects: Java game engine, C# blockchain implementation",
       "• Focus: Advanced Programming, Machine Learning, Networking",
       "",
-      "Note: Completed degree while working part-time as Software Engineer"
-    ]
-  },
-  {
-    title: "2017-2019",
-    category: "timeline",
-    year: "2017",
-    date: "2017 - 2019",
-    content: [
-      "Software Engineer @ GSA (Part-time while studying)",
-      "First professional role while studying",
-      "Foundation in Python development",
-      "Early ETL work",
-      "Initial exposure to data engineering"
+      "Note: Continued working part-time at GSA during first year of studies"
     ]
   },
   {
