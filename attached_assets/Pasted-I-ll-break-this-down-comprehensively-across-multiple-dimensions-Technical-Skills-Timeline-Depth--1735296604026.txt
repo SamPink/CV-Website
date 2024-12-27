@@ -1,0 +1,134 @@
+I'll break this down comprehensively across multiple dimensions:
+
+Technical Skills Timeline & Depth:
+
+Python Experience (~6 years):
+- Started at GSA (2017) with Python-based ETL workflows
+- Advanced to complex implementations at Markel (2022-2023) with FastAPI
+- Created dev-gpt using OpenAI's API integration
+- Demonstrated progression from basic ETL scripts to advanced AI system architecture
+- Core Python frameworks used: FastAPI, SQLAlchemy, Pydantic
+- Notable Python achievement: Open source dev-gpt project with 200+ stars
+
+Data Engineering Evolution (~4-5 years):
+- ETL Development:
+  - GSA (2017-2021): Built initial ETL pipelines
+  - Markel (2022-2023): Developed 8 distinct ETL pipelines
+  - Handled large-scale data: £100+ million in annual bookings
+- Database Experience:
+  - Azure SQL expertise at Markel
+  - AWS database work at EvolveYou
+  - Schema design and optimization
+- Data Pipeline Tools:
+  - Azure Container Registry
+  - Docker containerization
+  - CI/CD with Azure Pipelines
+
+AI/ML Journey (~2 years intensive):
+- Early ML Work:
+  - GSA booking cancellation prediction (£1+ million savings)
+- Recent AI Focus:
+  - Ablebox (2023-Present): Lead AI Systems Engineer
+  - LLM Integration: llama3, Anthropic's Sonnet 3.5, GPT-4
+  - Real-time AI applications: Factory floor communication analysis
+  - Chatbot development with company data integration
+
+Cloud Platform Expertise:
+AWS (~3 years):
+- Lambda implementations at Shelby Finance
+- API deployment at EvolveYou
+- Data consolidation projects
+- Integration with tracking platforms
+
+Azure (~2 years):
+- Pipeline development at Markel
+- Container Registry usage
+- SQL database management
+- CI/CD implementation
+
+Specialized Tools & Technologies:
+- FastAPI & SQLAlchemy (~2 years):
+  - Internal API development at Markel
+  - Database view presentation
+  - REST API implementations
+- Docker (~2 years):
+  - Container deployment at Markel
+  - Cross-environment application deployment
+- LangChain: Recent implementation at Ablebox
+- Geospatial Analysis: Rasterio library experience
+- Visualization: Tableau reporting at EvolveYou
+
+Project Management & Leadership:
+- Team Leadership:
+  - Current: Leading AI systems team at Ablebox
+  - Stakeholder management across multiple roles
+  - Project delivery oversight
+- Project Highlights:
+  - N8N workflow tool implementation
+  - Real-time communication analysis system
+  - Machine learning prediction models
+  - Data aggregation dashboards
+
+Career Progression Analysis:
+
+Early Career (2017-2019):
+- Started as Software Engineer at GSA
+- Focus on basic ETL and data pipeline development
+- Concurrent with university studies
+- Built foundation in Python and data engineering
+
+Mid Career (2019-2022):
+- Transition to specialized roles
+- Increased focus on data engineering
+- Development of API expertise
+- Cloud platform experience growth
+
+Recent Career (2022-Present):
+- Leadership position in AI development
+- Advanced system architecture
+- Innovation in AI implementation
+- Team leadership and strategy
+
+Notable Achievements Timeline:
+
+2017-2019:
+- Initial ETL workflow development at GSA
+- Foundation of Python expertise
+
+2019-2021:
+- Machine learning model development
+- Booking cancellation prediction system
+
+2021-2022:
+- AWS Lambda implementations
+- Dashboard development for multiple teams
+
+2022-2023:
+- Multiple internal API developments
+- Docker and Azure pipeline integration
+- Geospatial data analysis
+
+2023-Present:
+- Advanced AI chatbot development
+- Real-time communication analysis system
+- LLM integration projects
+- Open source project success (dev-gpt)
+
+Educational Background Impact:
+- BSc in Computer Science (2:1) from University of Reading
+- Dissertation: ML model for student accommodation
+- Practical projects: Java game and C# blockchain
+- Academic foundation supporting career progression
+
+Skills Growth Areas:
+- Started: Basic Python and ETL
+- Progressed to: Advanced data engineering
+- Current focus: AI systems architecture and LLM integration
+
+Document Discrepancies:
+- Some date inconsistencies between CV and LinkedIn
+- Role descriptions vary in technical detail
+- LinkedIn focuses on broader achievements
+- CV provides more technical specifics
+
+Would you like me to expand on any particular aspect of this analysis?

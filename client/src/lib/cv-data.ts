@@ -9,88 +9,88 @@ export const detailedInfo: DetailedInfo[] = [
     title: "AI & LLMs",
     category: "expertise",
     content: [
-      "Expert in integrating cutting-edge AI technologies including llama3, GPT-4, and Anthropics sonnect 3.5",
-      "Built advanced AI chatbot using N8N workflow tool, Python, LLMs and SQL",
-      "Developed Text-to-Speech Interface utilizing Agent workflows and OpenAI",
-      "Real-time communication analysis using OpenAI's Whisper for factory floor communications",
-      "Integration with cutting-edge LLMs for versatile AI applications"
+      "6+ years of progressive experience from ETL to advanced AI systems",
+      "Recent focus: LLM integration with llama3, GPT-4, Anthropics sonnect 3.5",
+      "Developed AI chatbot using N8N workflow tool with real-time data integration",
+      "Implemented factory floor communication analysis using OpenAI's Whisper",
+      "Created open-source dev-gpt project with 200+ GitHub stars"
     ]
   },
   {
-    title: "Python & FastAPI Development",
+    title: "Python Development",
     category: "expertise",
     content: [
-      "Developed multiple internal APIs using FastAPI and SQLAlchemy",
-      "Expert in Python development with strong focus on data engineering",
-      "Experience with modern Python frameworks and tools",
-      "Built high-performance ETL workflows and data pipelines",
-      "Proficient in SQLAlchemy, Pydantic, and other Python ecosystem tools"
+      "Started with ETL workflows at GSA (2017)",
+      "Advanced to FastAPI implementations at Markel (2022-2023)",
+      "Expert in FastAPI, SQLAlchemy, Pydantic ecosystem",
+      "Built 8 distinct ETL pipelines processing large-scale data",
+      "Created high-performance data processing systems handling £100M+ annual bookings"
     ]
   },
   {
-    title: "Business Process Automation",
+    title: "Cloud Architecture",
     category: "expertise",
     content: [
-      "Implemented AI technologies to revolutionize business processes",
-      "Created intelligent systems for improved decision-making",
-      "Automated user onboarding and offboarding processes for 1,000+ users",
-      "Developed automated data aggregation solutions",
-      "Streamlined operational workflows using AI and machine learning"
+      "AWS experience: Lambda, EC2 implementations (3+ years)",
+      "Azure expertise: Pipeline development, Container Registry (2+ years)",
+      "Implemented CI/CD with Azure Pipelines",
+      "Docker containerization for cross-environment deployment",
+      "Cloud-based data processing and API development"
     ]
   },
   {
-    title: "Geospatial Data Analysis",
+    title: "Data Engineering",
     category: "expertise",
     content: [
-      "Utilized Rasterio library for advanced geospatial data analysis",
-      "Processed and analyzed coordinates from geotiff files",
-      "Implemented geospatial data processing pipelines",
-      "Experience with geographic information systems",
-      "Built solutions for location-based data analysis"
+      "4+ years specialized in data engineering solutions",
+      "Designed and optimized database schemas for scalability",
+      "Built ETL pipelines processing mission-critical data",
+      "Experience with Azure SQL, AWS databases",
+      "Implemented geospatial data analysis using Rasterio"
     ]
   },
   {
-    title: "AI Chatbot Development",
+    title: "Machine Learning Projects",
     category: "achievement",
     content: [
-      "Built an advanced AI chatbot using N8N workflow tool",
-      "Integrated with real-time company data systems",
-      "Implemented graphical data summary generation",
-      "Combined Python, LLMs, and SQL for comprehensive solution",
-      "Enhanced data accessibility and user interaction"
+      "Developed booking cancellation prediction model saving £1M+ annually",
+      "80% accuracy in predicting student accommodation cancellations",
+      "Implemented real-time ML model deployment",
+      "Created automated Python development tools using GPT-4",
+      "Integrated multiple LLM models for production applications"
     ]
   },
   {
-    title: "Real-time Communication Analysis",
+    title: "ETL Systems Architecture",
     category: "achievement",
     content: [
-      "Pioneered real-time transcription system using Whisper",
-      "Implemented factory floor communication analysis",
-      "Resolved machine-related issues in real-time",
-      "Improved operational efficiency through AI-driven solutions",
-      "Created innovative communication monitoring system"
+      "Built ETL workflow handling £100M+ in annual bookings",
+      "Developed 8 distinct ETL pipelines at Markel",
+      "Implemented automated data processing systems",
+      "Created efficient data transformation workflows",
+      "Designed scalable data pipeline architectures"
     ]
   },
   {
-    title: "Dev-GPT Project",
+    title: "API Development",
     category: "achievement",
     content: [
-      "Created open-source AI tool with 200+ GitHub stars",
-      "Automated Python development using GPT-4 technology",
-      "Led community engagement and contribution management",
-      "Demonstrated expertise in AI model utilization",
-      "Successfully maintained and grew open-source project"
+      "Developed multiple internal APIs using FastAPI",
+      "Created REST endpoints for data access and manipulation",
+      "Implemented efficient database views and tables",
+      "Built API integration with various tracking platforms",
+      "Designed robust authentication and authorization systems"
     ]
   },
   {
-    title: "Geospatial Systems",
+    title: "Technical Leadership",
     category: "achievement",
     content: [
-      "Implemented comprehensive geospatial data analysis systems",
-      "Developed solutions using Rasterio for coordinate processing",
-      "Created efficient data processing pipelines",
-      "Enhanced geographic data visualization capabilities",
-      "Improved location-based data analysis workflows"
+      "Lead AI Systems Engineer at Ablebox",
+      "Managed development of cutting-edge AI solutions",
+      "Led implementation of real-time communication analysis",
+      "Directed integration of multiple LLM models",
+      "Guided team in adopting AI-driven development practices"
     ]
   }
 ];
