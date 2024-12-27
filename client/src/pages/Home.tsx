@@ -8,6 +8,7 @@ import SocialLinks from "@/components/SocialLinks";
 import { Card } from "@/components/ui/card";
 import { detailedInfo, type DetailedInfo } from "@/lib/cv-data";
 import GitHubStats from "@/components/GitHubStats";
+import DissertationSection from "@/components/DissertationSection";
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -122,6 +123,7 @@ export default function Home() {
                   </Card>
 
                   <GitHubStats />
+                  <DissertationSection />
                 </div>
 
                 <div>
