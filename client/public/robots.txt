@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sampink.dev/sitemap.xml
