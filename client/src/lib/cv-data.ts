@@ -11,10 +11,12 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Professional Overview",
     category: "expertise",
     content: [
-      "Lead AI Systems Engineer with progressive experience since 2017, evolving from Python development to AI leadership.",
-      "• Architected and implemented enterprise-scale AI systems",
-      "• Developed high-performance data processing pipelines",
-      "• Led multiple successful technical projects and teams"
+      "6+ Years Total Professional Experience (2017-Present)",
+      "Led development of AI systems generating business value",
+      "Created enterprise ETL pipelines handling annual transactions",
+      "Built and maintained multiple production APIs and data platforms",
+      "Progressed from Junior Developer to Lead AI Systems Engineer",
+      "Successfully delivered 10+ major technical projects"
     ]
   },
   {
@@ -42,20 +44,6 @@ export const detailedInfo: DetailedInfo[] = [
       "- Optimized scheduling across multiple machines and factories",
       "- Real-time order processing and resource allocation",
       "- Improved production efficiency through AI-driven insights"
-    ]
-  },
-  {
-    title: "2018-2021",
-    category: "timeline",
-    year: "2018",
-    date: "2018 - 2021",
-    content: [
-      "BSc Computer Science, University of Reading",
-      "• Machine Learning Dissertation: 80% accuracy in prediction models",
-      "• Key Projects: Java game engine, C# blockchain implementation",
-      "• Focus: Advanced Programming, Machine Learning, Networking",
-      "• Grade: 2:1 Honours",
-      "Duration: 3 years"
     ]
   },
   {
@@ -124,12 +112,27 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
+    title: "2018-2021: Education",
+    category: "timeline",
+    year: "2018",
+    date: "2018 - 2021",
+    content: [
+      "BSc Computer Science, University of Reading",
+      "• Grade: 2:1 Honours",
+      "• Machine Learning Dissertation: 80% accuracy in prediction models",
+      "• Key Projects: Java game engine, C# blockchain implementation",
+      "• Focus: Advanced Programming, Machine Learning, Networking",
+      "",
+      "Note: Completed degree while working part-time as Software Engineer"
+    ]
+  },
+  {
     title: "2017-2019",
     category: "timeline",
     year: "2017",
     date: "2017 - 2019",
     content: [
-      "Software Engineer @ GSA",
+      "Software Engineer @ GSA (Part-time while studying)",
       "First professional role while studying",
       "Foundation in Python development",
       "Early ETL work",
