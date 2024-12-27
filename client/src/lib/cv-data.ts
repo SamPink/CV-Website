@@ -11,12 +11,12 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Professional Overview",
     category: "expertise",
     content: [
-      "6+ Years Total Professional Experience (2017-Present)",
-      "Led development of AI systems generating £1M+ in business value",
-      "Created enterprise ETL pipelines handling £100M+ in annual transactions",
-      "Built and maintained multiple production APIs and data platforms",
-      "Progressed from Junior Developer to Lead AI Systems Engineer",
-      "Successfully delivered 10+ major technical projects"
+      "Dynamic Lead AI Systems Engineer with a proven track record spanning 6+ years in software development and artificial intelligence. Starting as a junior developer in 2017, rapidly progressed through increasingly complex roles to current leadership position.",
+      "Demonstrated expertise in implementing cutting-edge AI solutions, with achievements including:",
+      "• Development of AI systems generating £1M+ in business value",
+      "• Design of enterprise ETL pipelines processing £100M+ annual transactions",
+      "• Leadership of multiple technical teams and successful delivery of 10+ major projects",
+      "Consistently driven innovation across roles, evolving from foundational Python development to advanced AI systems architecture, while maintaining a focus on delivering measurable business impact."
     ]
   },
   {
