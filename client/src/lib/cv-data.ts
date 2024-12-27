@@ -30,10 +30,7 @@ export const detailedInfo: DetailedInfo[] = [
       "Building advanced chatbots with real-time data access",
       "Implementing LLM technologies (llama3, Anthropic Sonnet 3.5, GPT-4)",
       "Creating real-time factory floor communication analysis systems",
-      "Transitioning to AI leadership role",
-      "Spearheading AI implementation strategies",
-      "Building foundational AI infrastructure",
-      "Establishing AI development practices"
+      "Duration: 1 year 2 months"
     ]
   },
   {
@@ -46,7 +43,8 @@ export const detailedInfo: DetailedInfo[] = [
       "Built internal APIs with FastAPI/SQLAlchemy",
       "Developed ETL pipelines",
       "Implemented Azure CI/CD",
-      "Docker containerization work"
+      "Docker containerization work",
+      "Duration: 9 months"
     ]
   },
   {
@@ -59,7 +57,8 @@ export const detailedInfo: DetailedInfo[] = [
       "AWS API development",
       "User statistics consolidation",
       "Tableau reporting",
-      "Analytics platform integration"
+      "Analytics platform integration",
+      "Duration: 6 months"
     ]
   },
   {
@@ -72,7 +71,8 @@ export const detailedInfo: DetailedInfo[] = [
       "Python-based Dash web application",
       "AWS Lambda implementation",
       "Jira API integration",
-      "Interactive dashboard creation"
+      "Interactive dashboard creation",
+      "Duration: 4 months"
     ]
   },
   {
@@ -85,7 +85,8 @@ export const detailedInfo: DetailedInfo[] = [
       "High-performance ETL workflow development",
       "ML project for booking cancellations",
       "£1+ million annual savings achieved",
-      "£100+ million bookings pipeline"
+      "£100+ million bookings pipeline",
+      "Duration: 1 year 11 months"
     ]
   },
   {
@@ -98,7 +99,8 @@ export const detailedInfo: DetailedInfo[] = [
       "Business Intelligence Analyst @ Spire Healthcare (Jul - Sep 2019)",
       "Initial professional cloud development experience",
       "First exposure to business intelligence",
-      "Foundation in data analysis"
+      "Foundation in data analysis",
+      "Duration: 11 months"
     ]
   },
   {
@@ -111,7 +113,8 @@ export const detailedInfo: DetailedInfo[] = [
       "Achieved 2:1 Classification",
       "Dissertation: ML model for student accommodation (80% accuracy)",
       "Key Projects: Java game development, C# blockchain implementation",
-      "Focus Areas: Advanced Programming, Machine Learning, Networking"
+      "Focus Areas: Advanced Programming, Machine Learning, Networking",
+      "Duration: 3 years"
     ]
   },
   {
@@ -124,7 +127,8 @@ export const detailedInfo: DetailedInfo[] = [
       "First professional role while studying",
       "Foundation in Python development",
       "Early ETL work",
-      "Initial exposure to data engineering"
+      "Initial exposure to data engineering",
+      "Duration: 2 years"
     ]
   },
   {
