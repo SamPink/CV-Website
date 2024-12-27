@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/dialog";
 import { type DetailedInfo } from "@/lib/cv-data";
 import { motion } from "framer-motion";
+import ResearchPreview from "./ResearchPreview";
 
 interface DetailModalProps {
   info?: DetailedInfo;
@@ -15,6 +16,10 @@ interface DetailModalProps {
 
 export default function DetailModal({ info, isOpen, onClose }: DetailModalProps) {
   if (!info) return null;
+
+  const isDissertation = info.content.some(item => 
+    item.includes("Machine Learning Dissertation:")
+  );
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -50,6 +55,12 @@ export default function DetailModal({ info, isOpen, onClose }: DetailModalProps)
               </motion.li>
             ))}
           </ul>
+
+          {isDissertation && (
+            <div className="mt-6">
+              <ResearchPreview />
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>
