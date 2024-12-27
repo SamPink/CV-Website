@@ -20,29 +20,33 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
-    title: "2023-Present",
+    title: "2024 (Current)",
     category: "timeline",
-    year: "2023",
-    date: "November 2023 - Present",
+    year: "2024",
+    date: "2024 (Current)",
     content: [
       "Lead AI Systems Engineer @ Ablebox",
       "Leading AI systems development",
       "Building advanced chatbots with real-time data access",
-      "Implementing LLM technologies",
-      "Creating real-time communication analysis systems"
+      "Implementing LLM technologies (llama3, Anthropic Sonnet 3.5, GPT-4)",
+      "Creating real-time factory floor communication analysis systems"
     ]
   },
   {
-    title: "2023 (Earlier)",
+    title: "2023",
     category: "timeline",
     year: "2023",
-    date: "January 2023 - September 2023",
+    date: "January 2023 - December 2023",
     content: [
-      "Data Engineer @ Markel",
-      "Built internal APIs with FastAPI/SQLAlchemy",
-      "Developed ETL pipelines",
-      "Implemented Azure CI/CD",
-      "Docker containerization work"
+      "Lead AI Systems Engineer @ Ablebox (Started November)",
+      "- Transitioning to AI leadership role",
+      "- Spearheading AI implementation strategies",
+      "",
+      "Data Engineer @ Markel (Until September)",
+      "- Built internal APIs with FastAPI/SQLAlchemy",
+      "- Developed ETL pipelines",
+      "- Implemented Azure CI/CD",
+      "- Docker containerization work"
     ]
   },
   {
@@ -52,10 +56,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "February 2022 - July 2022",
     content: [
       "Data Engineer @ EvolveYou",
-      "AWS API development",
-      "User statistics consolidation",
-      "Tableau reporting",
-      "Analytics platform integration"
+      "- AWS API development",
+      "- User statistics consolidation",
+      "- Tableau reporting",
+      "- Analytics platform integration"
     ]
   },
   {
@@ -65,10 +69,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "November 2021 - February 2022",
     content: [
       "Back-end Developer @ Shelby Finance",
-      "Python-based Dash web application",
-      "AWS Lambda implementation",
-      "Jira API integration",
-      "Interactive dashboard creation"
+      "- Python-based Dash web application",
+      "- AWS Lambda implementation",
+      "- Jira API integration",
+      "- Interactive dashboard creation"
     ]
   },
   {
@@ -78,10 +82,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "2020 - November 2021",
     content: [
       "Contract Data Engineer @ GSA Dubai",
-      "High-performance ETL workflow development",
-      "ML project for booking cancellations",
-      "£1+ million annual savings achieved",
-      "£100+ million bookings pipeline"
+      "- High-performance ETL workflow development",
+      "- ML project for booking cancellations",
+      "- £1+ million annual savings achieved",
+      "- £100+ million bookings pipeline"
     ]
   },
   {
@@ -91,23 +95,11 @@ export const detailedInfo: DetailedInfo[] = [
     date: "July 2019 - May 2020",
     content: [
       "Multiple Roles:",
-      "Junior Cloud Developer @ ProvenWorks (Oct 2019 - May 2020)",
-      "Business Intelligence Analyst @ Spire Healthcare (Jul - Sep 2019)",
-      "First exposure to business intelligence"
-    ]
-  },
-  {
-    title: "2017-2019: Software Engineer @ GSA",
-    category: "timeline",
-    year: "2017",
-    date: "2017 - 2019",
-    content: [
-      "First Professional Role",
-      "• 2017-2018: Full-time Software Engineer",
-      "• 2018-2019: Transitioned to part-time while studying",
-      "• Built automated data processing systems",
-      "• Foundation in Python development",
-      "• Initial exposure to data engineering"
+      "- Junior Cloud Developer @ ProvenWorks (October 2019 - May 2020)",
+      "  Initial professional cloud development experience",
+      "",
+      "- Business Intelligence Analyst @ Spire Healthcare (July - September 2019)",
+      "  First exposure to business intelligence"
     ]
   },
   {
@@ -117,10 +109,23 @@ export const detailedInfo: DetailedInfo[] = [
     date: "2018 - 2021",
     content: [
       "BSc Computer Science, University of Reading",
-      "• Grade: 2:1 Honours",
-      "• Machine Learning Dissertation: 80% accuracy in prediction models",
-      "• Key Projects: Java game engine, C# blockchain implementation",
-      "• Focus: Advanced Programming, Machine Learning, Networking"
+      "- Machine learning dissertation",
+      "- Java game development",
+      "- C# blockchain project",
+      "- Grade: 2:1 Honours"
+    ]
+  },
+  {
+    title: "2017-2019: Software Engineer @ GSA",
+    category: "timeline",
+    year: "2017",
+    date: "2017 - 2019",
+    content: [
+      "First Professional Role",
+      "- First professional role while studying",
+      "- Foundation in Python development",
+      "- Early ETL work",
+      "- Initial exposure to data engineering"
     ]
   },
   {
