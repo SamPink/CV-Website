@@ -1,52 +1,80 @@
 export type DetailedInfo = {
   title: string;
   content: string[];
-  category: 'expertise' | 'achievement' | 'experience';
+  category: 'expertise' | 'achievement' | 'timeline';
+  year?: string;
 };
 
 export const detailedInfo: DetailedInfo[] = [
   {
-    title: "AI & LLMs",
-    category: "expertise",
+    title: "2017-2019: Foundation Years",
+    category: "timeline",
+    year: "2017",
     content: [
-      "6+ years of progressive experience from ETL to advanced AI systems",
-      "Recent focus: LLM integration with llama3, GPT-4, Anthropics sonnect 3.5",
-      "Developed AI chatbot using N8N workflow tool with real-time data integration",
-      "Implemented factory floor communication analysis using OpenAI's Whisper",
-      "Created open-source dev-gpt project with 200+ GitHub stars"
+      "Started as Software Engineer at GSA",
+      "Built initial ETL workflows in Python",
+      "Developed data pipeline foundations",
+      "First exposure to cloud platforms",
+      "Concurrent Computer Science studies at University of Reading"
     ]
   },
   {
-    title: "Python Development",
-    category: "expertise",
+    title: "2019-2021: Data Engineering Focus",
+    category: "timeline",
+    year: "2019",
     content: [
-      "Started with ETL workflows at GSA (2017)",
-      "Advanced to FastAPI implementations at Markel (2022-2023)",
-      "Expert in FastAPI, SQLAlchemy, Pydantic ecosystem",
-      "Built 8 distinct ETL pipelines processing large-scale data",
-      "Created high-performance data processing systems handling £100M+ annual bookings"
+      "Advanced ETL systems handling £100M+ annual bookings",
+      "Expanded cloud platform expertise (AWS, Azure)",
+      "Built first ML model for booking cancellation prediction",
+      "Improved data processing pipelines",
+      "Gained expertise in database optimization"
     ]
   },
   {
-    title: "Cloud Architecture",
-    category: "expertise",
+    title: "2021-2022: API & Cloud Architecture",
+    category: "timeline",
+    year: "2021",
     content: [
-      "AWS experience: Lambda, EC2 implementations (3+ years)",
-      "Azure expertise: Pipeline development, Container Registry (2+ years)",
-      "Implemented CI/CD with Azure Pipelines",
-      "Docker containerization for cross-environment deployment",
-      "Cloud-based data processing and API development"
+      "Developed AWS Lambda implementations",
+      "Created data aggregation dashboards",
+      "Built Python-based Dash applications",
+      "Enhanced cloud architecture skills",
+      "Started working with real-time data processing"
     ]
   },
   {
-    title: "Data Engineering",
+    title: "2022-2023: Advanced Data Engineering",
+    category: "timeline",
+    year: "2022",
+    content: [
+      "Developed 8 distinct ETL pipelines at Markel",
+      "Implemented FastAPI and SQLAlchemy solutions",
+      "Mastered geospatial data analysis with Rasterio",
+      "Set up CI/CD with Azure Pipelines",
+      "Created robust API authentication systems"
+    ]
+  },
+  {
+    title: "2023-Present: AI Systems Leadership",
+    category: "timeline",
+    year: "2023",
+    content: [
+      "Lead AI Systems Engineer at Ablebox",
+      "Integration of advanced LLMs (llama3, GPT-4)",
+      "Built AI chatbot with N8N workflow",
+      "Implemented real-time communication analysis",
+      "Created dev-gpt (200+ GitHub stars)"
+    ]
+  },
+  {
+    title: "Technical Skills Growth",
     category: "expertise",
     content: [
-      "4+ years specialized in data engineering solutions",
-      "Designed and optimized database schemas for scalability",
-      "Built ETL pipelines processing mission-critical data",
-      "Experience with Azure SQL, AWS databases",
-      "Implemented geospatial data analysis using Rasterio"
+      "Python Development (6+ years): From basic ETL to advanced AI systems",
+      "Data Engineering (4+ years): Built enterprise-scale data pipelines",
+      "Cloud Platforms (3+ years): AWS Lambda, Azure Pipelines, Docker",
+      "AI/ML (2+ years intensive): LLMs, real-time AI, ML models",
+      "API Development (2+ years): FastAPI, REST APIs, authentication systems"
     ]
   },
   {
