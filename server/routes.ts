@@ -72,7 +72,7 @@ export function registerRoutes(app: Express): Server {
       // Send a user-friendly error message
       res.status(500).json({ 
         error: 'Failed to process chat request',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        details: process.env.NODE_ENV === 'development' ? (error as Error).message : undefined
       });
     }
   });

@@ -11,6 +11,7 @@ export default function AIChat() {
   const [lines, setLines] = useState<ChatLine[]>([]);
   const [currentInput, setCurrentInput] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
+  const [hasError, setHasError] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
@@ -32,11 +33,17 @@ export default function AIChat() {
         const data = await response.json();
         if (response.ok) {
           setLines([{ type: 'output', content: data.response }]);
+          setHasError(false);
         } else {
-          setLines([{ type: 'output', content: "Hello! I'm Samuel's AI assistant. Type 'help' for available commands or ask me anything about Samuel's experience and skills." }]);
+          throw new Error(data.error || 'Failed to initialize chat');
         }
       } catch (error) {
-        setLines([{ type: 'output', content: "Hello! I'm Samuel's AI assistant. Type 'help' for available commands or ask me anything about Samuel's experience and skills." }]);
+        console.error('Chat initialization error:', error);
+        setLines([{ 
+          type: 'output', 
+          content: "I apologize, but I'm having trouble connecting to the AI service at the moment. Please try refreshing the page or try again later." 
+        }]);
+        setHasError(true);
       } finally {
         setIsProcessing(false);
       }
@@ -79,11 +86,19 @@ export default function AIChat() {
       const data = await response.json();
       if (response.ok) {
         setLines(prev => [...prev, { type: 'output', content: data.response }]);
+        setHasError(false);
       } else {
-        setLines(prev => [...prev, { type: 'output', content: 'Sorry, I encountered an error processing your request.' }]);
+        throw new Error(data.error || 'Failed to process request');
       }
     } catch (error) {
-      setLines(prev => [...prev, { type: 'output', content: 'Sorry, I encountered an error processing your request.' }]);
+      console.error('Chat error:', error);
+      setLines(prev => [...prev, { 
+        type: 'output', 
+        content: hasError 
+          ? "I'm still having trouble connecting to the AI service. Please try again later." 
+          : "I apologize, but I encountered an error processing your request. Please try again."
+      }]);
+      setHasError(true);
     } finally {
       setIsProcessing(false);
     }
@@ -99,7 +114,7 @@ export default function AIChat() {
   return (
     <div className="bg-black border-2 border-[#00ff00] rounded-lg p-4 h-[500px] flex flex-col">
       <h2 className="text-xl font-bold mb-4 text-[#00ff00] glitch-effect" data-text="AI Assistant">
-        AI Assistant
+        AI Assistant {hasError && <span className="text-sm text-red-500">(Service Unavailable)</span>}
       </h2>
       <ScrollArea className="flex-1">
         <div ref={scrollAreaRef} className="space-y-2">
@@ -125,8 +140,8 @@ export default function AIChat() {
           onChange={(e) => setCurrentInput(e.target.value)}
           onKeyPress={handleKeyPress}
           className="flex-1 bg-transparent border-none outline-none text-[#00ff00] font-mono"
-          placeholder="Ask me anything about Samuel's experience..."
-          disabled={isProcessing}
+          placeholder={hasError ? "AI service currently unavailable..." : "Ask me anything about Samuel's experience..."}
+          disabled={isProcessing || hasError}
           autoFocus
         />
       </div>
