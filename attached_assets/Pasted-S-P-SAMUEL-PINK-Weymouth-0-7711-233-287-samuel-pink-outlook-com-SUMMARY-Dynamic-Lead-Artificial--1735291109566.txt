@@ -1,0 +1,158 @@
+S P
+SAMUEL PINK
+Weymouth (0) 7711 233 287● samuel.pink@outlook.com●
+SUMMARY
+Dynamic Lead Artificial Intelligence
+Systems Developer with over 6 years
+of experience in data engineering and
+a recent focus on AI. Expert in
+integrating cutting-edge AI
+technologies like Agent workflows,
+OpenAI, and Whisper into business
+processes. Skilled in developing
+natural language interfaces and
+real-time communication analysis
+tools, showcasing a strong ability to
+enhance operational efficiency
+through AI-driven solutions.
+Renowned for leading innovative
+projects, building robust stakeholder
+relationships, and delivering
+high-caliber, data-driven solutions
+within critical timelines.
+SKILLS
+●
+Python●
+FastAPI●
+Artificial Intelligence & Machine
+Learning
+LangChain and OpenAI Technologies●
+SQLAlchemy●
+Pydantic●
+Business Process Automation●
+Geospatial data anlysis●
+Agile Methodology●
+Data Engineering●
+Data Visualization●
+Object Oriented Programming●
+EDUCATION
+BSc in Computer Science (2:1) :
+Computer Science
+University of Reading (UK)- Reading,
+RDG
+●
+Dissertation: Developed a machine
+learning model for global student
+accommodations to predict booking
+cancellations with 80% accuracy,
+offering insights that could
+potentially save millions by
+mitigating unforeseen cancellations.
+●
+Networking and Advanced Java
+Programming which involved
+creating a 2nd-year Java game and a
+3rd-year C# blockchain project,
+GitHub links available on request.
+EXPERIENCE
+Lead AI Systems Engineer, 11/2023 - Current
+Ablebox - Yeovil
+●
+●
+●
+●
+●
+Built an advanced AI chatbot: Utilized cutting-edge technology to access real-time
+company data and generate graphical data summaries, designed using the N8N
+workflow tool, Python, LLM's and SQL
+Innovative real-time communication analysis: Pioneered a project using OpenAI's
+Whisper for real-time transcription and understanding of factory floor
+communications, effectively resolving machine-related issues on the spot and
+elevating operational efficiency
+Integration with cutting edge LLMs: Demonstrated expertise in AI by successfully
+integrating and working with Large Language Models like llama3, Anthropics
+sonnect 3.5, and GPT-4o showcasing versatility in AI application development
+AI-Driven process optimization: Implemented AI technologies to revolutionize
+business processes, focusing on creating intelligent systems that improve both
+decision-making and operational workflows
+Leadership in AI Innovation: Played a pivotal role in researching and developing
+ground-breaking AI-based technologies, leading a team to build systems and
+architectures that align with the cutting-edge vision of AI in business.
+Data Engineer, 08/2022 - 09/2023
+Markel - London, UK
+●
+Utilized Rasterio library to collect geospatial data from coordinates provided in
+geotiff files, demonstrating proficiency in geospatial data analysis and
+resourcefulness in utilizing technical documentation.
+●
+Developed multiple internal APIs using FastAPI and SQLAlchemy, presenting SQL
+database views and tables
+●
+Spearheaded Python code development and testing processes in collaboration with
+product and data teams, ensuring timely delivery of high-quality data solutions
+●
+Utilized Docker for containerization, ensuring consistent and efficient deployment of
+applications across different environments
+●
+Integrated Azure Pipelines for CI/CD, automating build, test, and deployment
+workflows, resulting in streamlined development cycles and enhanced code quality
+●
+Engineered and deployed 8 ETL pipelines as distinct Python scripts, facilitating data
+ingestion from external REST APIs
+●
+Transformed raw data into business-centric objects before persisting them into an
+Azure SQL database, enhancing data availability and accuracy
+Architected the database schema by defining a multitude of SQL tables and views,●
+ensuring data integrity and ease of querying for downstream applications
+Data Engineer, 02/2022 - 07/2022
+EvolveYou - London, UK
+●
+Created various reports to tracker user metrics and activity across different
+platforms using Tableau
+●
+Designed and deployed an API on AWS to seamlessly consolidate user statistics from
+multiple tracking platforms, facilitating a unified view of user interactions and
+behaviors
+●
+Conducted in-depth data analysis by connecting to various analytics platforms and
+the company's SQL database
+●
+Extracted valuable insights and trends, empowering stakeholders with actionable
+data for informed decision-making.
+Back-end Developer, 11/2021 - 02/2022
+Shelby Finance Ltd - Remote, UK
+●
+Designed and deployed a Python-based Dash web application on AWS Lambda that
+interfaced with the Jira API, consolidating data from multiple teams, resulting in a
+more efficient data aggregation process
+●
+Dashboard & Data Visualization: Created 10 interactive dashboards to provide
+insights into metrics such as burndown rates and story points across multiple Jira
+teams, enhancing team visibility and project tracking.
+Software Engineer, 06/2017 - 11/2021
+Global Student Accomodation - London
+●
+●
+Launched a high-performance ETL workflow, leading to representing £100+ million
+in annual bookings
+Completed a machine learning project to correctly predict customer booking
+cancellations using real-time company data, which resulted in saving £1+ million
+annually
+Deployed a bespoke data engineering pipeline using Azure Container Registry.●
+ACCOMPLISHMENTS
+●
+Developer of 'dev-gpt': An Automated Python Developer Tool (200+ stars on
+●
+●
+●
+●
+GitHub)
+Project Development: creation of 'dev-gpt,' an open-source project aimed at
+automating Python development tasks using GPT-4 technology.
+Innovation in AI: Integrated OpenAI's GPT-4 to facilitate automated code
+generation, demonstrating an advanced application of AI in software development.
+Community Engagement: Actively maintained the project, managing contributions
+from multiple developers and engaging with the user community to refine the tool.
+Technical Proficiency: Demonstrated deep understanding of Python and GPT-4,
+showcasing skill in both programming and AI model utilization.
+GitHub Repository: https://github.com/SamPink/dev-gpt●
