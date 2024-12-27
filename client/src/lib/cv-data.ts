@@ -26,24 +26,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "November 2023 - Present",
     content: [
       "Lead AI Systems Engineer @ Ablebox",
-      "• Built innovative marketing content generator using OpenAI and Anthropic models",
-      "• Developed n8n-powered AI workflow system with Supabase integration",
-      "• Created intelligent production scheduling system using advanced AI reasoning",
-      "• Leading team of AI/ML engineers",
-      "",
-      "Key Projects:",
-      "1. AI Marketing Content Generator",
-      "- Integrated multiple AI models (OpenAI O1, Anthropic Sonnet 3.5)",
-      "- Built intuitive UI for topic-based content generation",
-      "- Implemented direct LinkedIn scheduling integration",
-      "- Used n8n for AI workflow orchestration",
-      "- Leveraged Supabase for authentication and data storage",
-      "",
-      "2. Intelligent Production Scheduler",
-      "- Utilized OpenAI's O1-Pro model for advanced reasoning",
-      "- Optimized scheduling across multiple machines and factories",
-      "- Real-time order processing and resource allocation",
-      "- Improved production efficiency through AI-driven insights"
+      "Leading AI systems development",
+      "Building advanced chatbots with real-time data access",
+      "Implementing LLM technologies",
+      "Creating real-time communication analysis systems"
     ]
   },
   {
@@ -66,10 +52,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "February 2022 - July 2022",
     content: [
       "Data Engineer @ EvolveYou",
-      "Created AWS-based analytics platform",
-      "Built executive dashboard system",
-      "Improved data accuracy significantly",
-      "Duration: 6 months"
+      "AWS API development",
+      "User statistics consolidation",
+      "Tableau reporting",
+      "Analytics platform integration"
     ]
   },
   {
@@ -79,10 +65,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "November 2021 - February 2022",
     content: [
       "Back-end Developer @ Shelby Finance",
-      "Developed automated reporting system",
-      "Built real-time analytics dashboard",
-      "Reduced manual reporting significantly",
-      "Duration: 4 months"
+      "Python-based Dash web application",
+      "AWS Lambda implementation",
+      "Jira API integration",
+      "Interactive dashboard creation"
     ]
   },
   {
@@ -92,10 +78,10 @@ export const detailedInfo: DetailedInfo[] = [
     date: "2020 - November 2021",
     content: [
       "Contract Data Engineer @ GSA Dubai",
-      "Built booking prediction ML model",
-      "Implemented high-performance ETL workflow",
-      "Managed large-scale bookings pipeline",
-      "Duration: 1 year 11 months"
+      "High-performance ETL workflow development",
+      "ML project for booking cancellations",
+      "£1+ million annual savings achieved",
+      "£100+ million bookings pipeline"
     ]
   },
   {
@@ -107,8 +93,7 @@ export const detailedInfo: DetailedInfo[] = [
       "Multiple Roles:",
       "Junior Cloud Developer @ ProvenWorks (Oct 2019 - May 2020)",
       "Business Intelligence Analyst @ Spire Healthcare (Jul - Sep 2019)",
-      "First professional cloud development experience",
-      "Duration: 11 months"
+      "First exposure to business intelligence"
     ]
   },
   {
