@@ -9,6 +9,7 @@ import { Card } from "@/components/ui/card";
 import { detailedInfo, type DetailedInfo } from "@/lib/cv-data";
 import GitHubStats from "@/components/GitHubStats";
 import DissertationSection from "@/components/DissertationSection";
+import { ChevronRight } from "lucide-react";
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -76,7 +77,7 @@ export default function Home() {
                     <h2 className="text-2xl font-bold mb-6 glitch-effect" data-text="CAREER TIMELINE">
                       CAREER TIMELINE
                     </h2>
-                    <div className="mb-8 bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg">
+                    <div className="mb-8 bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg hover:border-[#00ff00] transition-colors cursor-pointer">
                       <h3 className="text-lg font-semibold mb-2 text-[#00ff00]">Professional Experience</h3>
                       {expertiseItems[0].content.map((item, index) => (
                         <p key={index} className="text-[#00ff00]/90">{item}</p>
@@ -93,12 +94,13 @@ export default function Home() {
                           <div className="bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg group-hover:border-[#00ff00] transition-colors">
                             <div className="flex justify-between items-start mb-2">
                               <h3 className="text-lg font-semibold">{item.title}</h3>
-                              {item.date && (
-                                <span className="text-sm text-[#00ff00]/70">{item.date}</span>
-                              )}
                             </div>
                             <p className="text-[#00ff00]/90 font-bold">{item.content[0]}</p>
-                            <p className="text-sm text-[#00ff00]/80 mt-2">{item.content[1]}</p>
+                            <p className="text-sm text-[#00ff00]/70 mt-2">{item.content[1]}</p>
+                            <div className="flex items-center mt-2 text-[#00ff00]/50 text-sm">
+                              <ChevronRight className="w-4 h-4 mr-1" />
+                              <span>Click to expand</span>
+                            </div>
                           </div>
                         </div>
                       ))}
@@ -114,9 +116,12 @@ export default function Home() {
                         <div
                           key={index}
                           onClick={() => handleItemClick(expertiseItems.slice(-1)[0])}
-                          className="cursor-pointer bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg hover:border-[#00ff00] transition-colors"
+                          className="cursor-pointer bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg hover:border-[#00ff00] transition-colors group"
                         >
-                          <div className="text-[#00ff00]/90 hover:text-[#00ff00]">{skill}</div>
+                          <div className="flex justify-between items-center">
+                            <div className="text-[#00ff00]/90 group-hover:text-[#00ff00]">{skill}</div>
+                            <ChevronRight className="w-4 h-4 text-[#00ff00]/50 group-hover:text-[#00ff00]" />
+                          </div>
                         </div>
                       ))}
                     </div>
