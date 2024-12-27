@@ -109,10 +109,18 @@ export const detailedInfo: DetailedInfo[] = [
     date: "2018 - 2021",
     content: [
       "BSc Computer Science, University of Reading",
-      "- Machine learning dissertation",
+      "Grade: 2:1 Honours",
+      "",
+      "Machine Learning Dissertation:",
+      "- Developed ML model for predicting student accommodation booking cancellations",
+      "- Analyzed 14,363 bookings with £20M+ revenue impact",
+      "- Achieved 71% recall accuracy using Azure AutoML Stack Ensemble",
+      "- Implemented real-time prediction system with FastAPI and Docker",
+      "- Identified key cancellation factors including pricing and booking patterns",
+      "",
+      "Key Projects:",
       "- Java game development",
-      "- C# blockchain project",
-      "- Grade: 2:1 Honours"
+      "- C# blockchain implementation"
     ]
   },
   {
