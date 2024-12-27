@@ -3,6 +3,13 @@ import { createServer, type Server } from "http";
 import path from "path";
 
 export function registerRoutes(app: Express): Server {
+  // Add SEO-friendly headers
+  app.use((req, res, next) => {
+    // Add Link header for priority indexation hints
+    res.setHeader('Link', '</>;rel="canonical",</sitemap.xml>;rel="sitemap"');
+    next();
+  });
+
   // Chat endpoint for CV interaction
   app.post('/api/chat', async (req, res) => {
     try {
@@ -173,8 +180,16 @@ Be friendly, professional, and precise when answering questions. Focus on releva
     }
   });
 
-  // Serve dissertation PDF
+  // Serve dissertation PDF with SEO metadata
   app.get('/api/dissertation', (req, res) => {
+    // Add structured data for the research paper
+    res.setHeader('Link', '</api/dissertation>;rel="canonical"');
+
+    // Add research paper metadata
+    res.setHeader('X-Research-Author', 'Samuel Pink');
+    res.setHeader('X-Research-Title', 'Predicting Student Accommodation Cancellations Using Machine Learning');
+    res.setHeader('X-Research-Year', '2021');
+
     const pdfPath = path.join(process.cwd(), 'attached_assets', 'Dissertation.pdf');
     res.sendFile(pdfPath);
   });
