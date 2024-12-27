@@ -114,7 +114,7 @@ export default function AIChat() {
   return (
     <div className="bg-black border-2 border-[#00ff00] rounded-lg p-4 h-[500px] flex flex-col">
       <h2 className="text-xl font-bold mb-4 text-[#00ff00] glitch-effect" data-text="AI Assistant">
-        AI Assistant {hasError && <span className="text-sm text-red-500">(Service Unavailable)</span>}
+        AI Assistant {hasError && <span className="text-red-500">(Service Unavailable)</span>}
       </h2>
       <ScrollArea className="flex-1">
         <div ref={scrollAreaRef} className="space-y-2">
