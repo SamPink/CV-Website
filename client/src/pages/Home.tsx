@@ -75,6 +75,12 @@ export default function Home() {
                     <h2 className="text-2xl font-bold mb-6 glitch-effect" data-text="CAREER TIMELINE">
                       CAREER TIMELINE
                     </h2>
+                    <div className="mb-8 bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg">
+                      <h3 className="text-lg font-semibold mb-2 text-[#00ff00]">Professional Experience</h3>
+                      {expertiseItems[0].content.map((item, index) => (
+                        <p key={index} className="text-[#00ff00]/90">{item}</p>
+                      ))}
+                    </div>
                     <div className="space-y-6 relative before:content-[''] before:absolute before:left-2 before:top-2 before:w-0.5 before:h-[calc(100%-20px)] before:bg-[#00ff00]/30">
                       {timelineItems.map((item, index) => (
                         <div

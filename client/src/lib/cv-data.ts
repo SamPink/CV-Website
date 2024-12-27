@@ -8,6 +8,17 @@ export type DetailedInfo = {
 
 export const detailedInfo: DetailedInfo[] = [
   {
+    title: "Total Experience",
+    category: "expertise",
+    content: [
+      "6+ Years Professional Experience",
+      "Started as Software Engineer in 2017",
+      "Progressed to Lead AI Systems Engineer",
+      "Concurrent work and study 2017-2021",
+      "Specialized in AI/ML since 2022"
+    ]
+  },
+  {
     title: "2024 (Current)",
     category: "timeline",
     year: "2024",
@@ -96,6 +107,19 @@ export const detailedInfo: DetailedInfo[] = [
       "Initial professional cloud development experience",
       "First exposure to business intelligence",
       "Foundation in data analysis"
+    ]
+  },
+  {
+    title: "2018-2021",
+    category: "timeline",
+    year: "2018",
+    date: "2018 - 2021",
+    content: [
+      "BSc Computer Science, University of Reading",
+      "Achieved 2:1 Classification",
+      "Dissertation: ML model for student accommodation (80% accuracy)",
+      "Key Projects: Java game development, C# blockchain implementation",
+      "Focus Areas: Advanced Programming, Machine Learning, Networking"
     ]
   },
   {
