@@ -45,6 +45,20 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
+    title: "2018-2021",
+    category: "timeline",
+    year: "2018",
+    date: "2018 - 2021",
+    content: [
+      "BSc Computer Science, University of Reading",
+      "• Machine Learning Dissertation: 80% accuracy in prediction models",
+      "• Key Projects: Java game engine, C# blockchain implementation",
+      "• Focus: Advanced Programming, Machine Learning, Networking",
+      "• Grade: 2:1 Honours",
+      "Duration: 3 years"
+    ]
+  },
+  {
     title: "2023 (Earlier)",
     category: "timeline",
     year: "2023",
