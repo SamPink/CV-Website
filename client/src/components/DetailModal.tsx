@@ -18,11 +18,14 @@ export default function DetailModal({ info, isOpen, onClose }: DetailModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-black/95 border-[#00ff00] text-[#00ff00]">
+      <DialogContent className="bg-black/95 border-[#00ff00] text-[#00ff00] max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold glitch-effect" data-text={info.title}>
             {info.title}
           </DialogTitle>
+          {info.date && (
+            <p className="text-[#00ff00]/70 text-sm">{info.date}</p>
+          )}
         </DialogHeader>
         <div className="mt-4">
           <ul className="space-y-4">
@@ -32,10 +35,18 @@ export default function DetailModal({ info, isOpen, onClose }: DetailModalProps)
                 initial={{ x: -20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: index * 0.1 }}
-                className="flex items-start space-x-2"
+                className={`flex items-start space-x-2 ${
+                  item.startsWith("Key Projects:") ? "mt-6 font-bold" : ""
+                }`}
               >
-                <span className="text-[#00ff00] mt-1">{'>'}</span>
-                <span className="text-[#00ff00]/90">{item}</span>
+                {!item.startsWith("Key Projects:") && (
+                  <span className="text-[#00ff00] mt-1">{'>'}</span>
+                )}
+                <span className={`text-[#00ff00]/90 ${
+                  item.startsWith("-") ? "ml-6" : ""
+                }`}>
+                  {item}
+                </span>
               </motion.li>
             ))}
           </ul>
