@@ -45,6 +45,84 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
+    title: "2023 (Earlier)",
+    category: "timeline",
+    year: "2023",
+    date: "January 2023 - September 2023",
+    content: [
+      "Data Engineer @ Markel",
+      "Built internal APIs with FastAPI/SQLAlchemy",
+      "Developed ETL pipelines",
+      "Implemented Azure CI/CD",
+      "Docker containerization work"
+    ]
+  },
+  {
+    title: "2022",
+    category: "timeline",
+    year: "2022",
+    date: "February 2022 - July 2022",
+    content: [
+      "Data Engineer @ EvolveYou",
+      "Created AWS-based analytics platform",
+      "Built executive dashboard system",
+      "Improved data accuracy significantly",
+      "Duration: 6 months"
+    ]
+  },
+  {
+    title: "2021-2022",
+    category: "timeline",
+    year: "2021",
+    date: "November 2021 - February 2022",
+    content: [
+      "Back-end Developer @ Shelby Finance",
+      "Developed automated reporting system",
+      "Built real-time analytics dashboard",
+      "Reduced manual reporting significantly",
+      "Duration: 4 months"
+    ]
+  },
+  {
+    title: "2020-2021",
+    category: "timeline",
+    year: "2020",
+    date: "2020 - November 2021",
+    content: [
+      "Contract Data Engineer @ GSA Dubai",
+      "Built booking prediction ML model",
+      "Implemented high-performance ETL workflow",
+      "Managed large-scale bookings pipeline",
+      "Duration: 1 year 11 months"
+    ]
+  },
+  {
+    title: "2019-2020",
+    category: "timeline",
+    year: "2019",
+    date: "July 2019 - May 2020",
+    content: [
+      "Multiple Roles:",
+      "Junior Cloud Developer @ ProvenWorks (Oct 2019 - May 2020)",
+      "Business Intelligence Analyst @ Spire Healthcare (Jul - Sep 2019)",
+      "First professional cloud development experience",
+      "Duration: 11 months"
+    ]
+  },
+  {
+    title: "2017-2019",
+    category: "timeline",
+    year: "2017",
+    date: "2017 - 2019",
+    content: [
+      "Software Engineer @ GSA",
+      "First professional role while studying",
+      "Foundation in Python development",
+      "Early ETL work",
+      "Initial exposure to data engineering"
+    ]
+  },
+  {
     title: "Technical Expertise",
     category: "expertise",
     content: [
