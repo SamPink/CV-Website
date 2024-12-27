@@ -49,7 +49,7 @@ export default function DissertationSection() {
           </DialogHeader>
           <iframe
             src="/api/dissertation"
-            className="w-full h-full"
+            className="w-full h-full rounded border-2 border-[#00ff00]/30"
             title="Dissertation PDF"
           />
         </DialogContent>
