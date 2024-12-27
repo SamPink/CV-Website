@@ -12,8 +12,8 @@ export const detailedInfo: DetailedInfo[] = [
     category: "expertise",
     content: [
       "6+ Years Total Professional Experience (2017-Present)",
-      "Led development of AI systems generating business value",
-      "Created enterprise ETL pipelines handling annual transactions",
+      "Led development of AI systems generating £1M+ in business value",
+      "Created enterprise ETL pipelines handling £100M+ in annual transactions",
       "Built and maintained multiple production APIs and data platforms",
       "Progressed from Junior Developer to Lead AI Systems Engineer",
       "Successfully delivered 10+ major technical projects"
@@ -112,12 +112,12 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
-    title: "2017-2019",
+    title: "2017-2019: Software Engineer @ GSA",
     category: "timeline",
     year: "2017",
     date: "2017 - 2019",
     content: [
-      "Software Engineer @ GSA",
+      "First Professional Role",
       "• 2017-2018: Full-time Software Engineer",
       "• 2018-2019: Transitioned to part-time while studying",
       "• Built automated data processing systems",
@@ -135,9 +135,7 @@ export const detailedInfo: DetailedInfo[] = [
       "• Grade: 2:1 Honours",
       "• Machine Learning Dissertation: 80% accuracy in prediction models",
       "• Key Projects: Java game engine, C# blockchain implementation",
-      "• Focus: Advanced Programming, Machine Learning, Networking",
-      "",
-      "Note: Continued working part-time at GSA during first year of studies"
+      "• Focus: Advanced Programming, Machine Learning, Networking"
     ]
   },
   {
