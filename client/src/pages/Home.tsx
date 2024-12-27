@@ -5,6 +5,7 @@ import TypewriterText from "@/components/TypewriterText";
 import ProjectCard from "@/components/ProjectCard";
 import SkillBar from "@/components/SkillBar";
 import DetailModal from "@/components/DetailModal";
+import SocialLinks from "@/components/SocialLinks";
 import { Card } from "@/components/ui/card";
 import { detailedInfo, type DetailedInfo } from "@/lib/cv-data";
 
@@ -37,6 +38,7 @@ export default function Home() {
         {showWelcome ? (
           <div className="h-screen flex items-center justify-center">
             <div className="space-y-4 text-center">
+              <SocialLinks />
               <TypewriterText
                 text="Welcome to my interactive CV"
                 className="text-4xl md:text-6xl font-bold glitch-effect"
@@ -63,6 +65,7 @@ export default function Home() {
                 className="text-xl md:text-2xl text-[#00ff00]/80 mb-8"
                 delay={50}
               />
+              <SocialLinks />
             </div>
 
             {showContent && (
