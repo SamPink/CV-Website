@@ -8,7 +8,6 @@ import SocialLinks from "@/components/SocialLinks";
 import { Card } from "@/components/ui/card";
 import { detailedInfo, type DetailedInfo } from "@/lib/cv-data";
 import GitHubStats from "@/components/GitHubStats";
-import SkillsVisualization from "@/components/SkillsVisualization";
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -109,13 +108,12 @@ export default function Home() {
                     <h2 className="text-2xl font-bold mb-4 glitch-effect" data-text="TECHNICAL EXPERTISE">
                       TECHNICAL EXPERTISE
                     </h2>
-                    <SkillsVisualization />
-                    <div className="space-y-4 mt-6">
-                      {expertiseItems[0].content.map((skill) => (
+                    <div className="space-y-4">
+                      {expertiseItems.slice(-1)[0].content.map((skill, index) => (
                         <div
-                          key={skill}
-                          onClick={() => handleItemClick(expertiseItems[0])}
-                          className="cursor-pointer hover:opacity-80"
+                          key={index}
+                          onClick={() => handleItemClick(expertiseItems.slice(-1)[0])}
+                          className="cursor-pointer bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg hover:border-[#00ff00] transition-colors"
                         >
                           <div className="text-[#00ff00]/90 hover:text-[#00ff00]">{skill}</div>
                         </div>
