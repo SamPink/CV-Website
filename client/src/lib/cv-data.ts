@@ -11,10 +11,10 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Professional Overview",
     category: "expertise",
     content: [
-      "Lead AI Systems Engineer with 6+ years of experience, evolving from Python development to AI leadership.",
-      "• Led AI systems development generating £1M+ in value",
-      "• Built enterprise pipelines handling £100M+ transactions",
-      "• Successfully delivered 10+ major technical projects"
+      "Lead AI Systems Engineer with progressive experience since 2017, evolving from Python development to AI leadership.",
+      "• Architected and implemented enterprise-scale AI systems",
+      "• Developed high-performance data processing pipelines",
+      "• Led multiple successful technical projects and teams"
     ]
   },
   {
