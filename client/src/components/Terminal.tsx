@@ -12,6 +12,7 @@ export default function Terminal() {
     { type: 'output', content: 'Welcome to the interactive CV terminal. Type "help" for available commands.' }
   ]);
   const [currentInput, setCurrentInput] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
 
@@ -21,21 +22,46 @@ export default function Terminal() {
     }
   }, [lines]);
 
-  const handleCommand = (cmd: string) => {
-    const trimmedCmd = cmd.trim().toLowerCase();
+  const handleCommand = async (cmd: string) => {
+    const trimmedCmd = cmd.trim();
     setLines(prev => [...prev, { type: 'input', content: `> ${cmd}` }]);
 
-    if (commands[trimmedCmd]) {
-      setLines(prev => [...prev, { type: 'output', content: commands[trimmedCmd] }]);
-    } else if (trimmedCmd === 'clear') {
+    if (trimmedCmd.toLowerCase() === 'clear') {
       setLines([]);
-    } else {
-      setLines(prev => [...prev, { type: 'output', content: 'Command not found. Type "help" for available commands.' }]);
+      return;
+    }
+
+    if (commands[trimmedCmd.toLowerCase()]) {
+      setLines(prev => [...prev, { type: 'output', content: commands[trimmedCmd.toLowerCase()] }]);
+      return;
+    }
+
+    // If not a predefined command, send to AI
+    setIsProcessing(true);
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message: trimmedCmd }),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        setLines(prev => [...prev, { type: 'output', content: data.response }]);
+      } else {
+        setLines(prev => [...prev, { type: 'output', content: 'Sorry, I encountered an error processing your request.' }]);
+      }
+    } catch (error) {
+      setLines(prev => [...prev, { type: 'output', content: 'Sorry, I encountered an error processing your request.' }]);
+    } finally {
+      setIsProcessing(false);
     }
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
+    if (e.key === 'Enter' && !isProcessing) {
       handleCommand(currentInput);
       setCurrentInput('');
     }
@@ -50,9 +76,14 @@ export default function Terminal() {
               {line.content}
             </div>
           ))}
+          {isProcessing && (
+            <div className="font-mono text-[#00ff00]/80 animate-pulse">
+              Processing...
+            </div>
+          )}
         </div>
       </ScrollArea>
-      
+
       <div className="flex items-center mt-4 border-t border-[#00ff00]/30 pt-4">
         <span className="text-[#00ff00] mr-2">{'>'}</span>
         <input
@@ -62,6 +93,7 @@ export default function Terminal() {
           onChange={(e) => setCurrentInput(e.target.value)}
           onKeyPress={handleKeyPress}
           className="flex-1 bg-transparent border-none outline-none text-[#00ff00] font-mono"
+          disabled={isProcessing}
           autoFocus
         />
       </div>
