@@ -8,6 +8,7 @@ import SocialLinks from "@/components/SocialLinks";
 import { Card } from "@/components/ui/card";
 import { detailedInfo, type DetailedInfo } from "@/lib/cv-data";
 import GitHubStats from "@/components/GitHubStats";
+import SkillsVisualization from "@/components/SkillsVisualization";
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -108,7 +109,8 @@ export default function Home() {
                     <h2 className="text-2xl font-bold mb-4 glitch-effect" data-text="TECHNICAL EXPERTISE">
                       TECHNICAL EXPERTISE
                     </h2>
-                    <div className="space-y-4">
+                    <SkillsVisualization />
+                    <div className="space-y-4 mt-6">
                       {expertiseItems[0].content.map((skill) => (
                         <div
                           key={skill}
