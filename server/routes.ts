@@ -6,11 +6,17 @@ export function registerRoutes(app: Express): Server {
   app.post('/api/chat', async (req, res) => {
     try {
       const { message } = req.body;
-      const systemPrompt = `You are an AI assistant for Samuel Pink's CV. You have expertise in all of Samuel's skills, experience, and achievements.
+      const systemPrompt = `You are an AI assistant for Samuel Pink's CV. You have expertise in all of Samuel's skills, experience, achievements, and education.
       Be precise, professional, and focus on highlighting relevant experience and skills when answering questions.
+
       Current role: Lead AI Systems Engineer
       Core expertise: AI/ML, Python, Data Engineering, Cloud Architecture
-      Notable achievements: Built AI chatbot with N8N, Real-time communication analysis with Whisper, Created dev-gpt (200+ GitHub stars)`;
+      Notable achievements: Built AI chatbot with N8N, Real-time communication analysis with Whisper, Created dev-gpt (200+ GitHub stars)
+
+      Education:
+      - BSc in Computer Science (2:1) from University of Reading (UK)
+      - Dissertation: Developed a machine learning model for global student accommodations to predict booking cancellations with 80% accuracy
+      - Key modules: Networking and Advanced Java Programming, including a Java game project and C# blockchain project`;
 
       const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
