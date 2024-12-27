@@ -19,25 +19,16 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
-    title: "2024 (Current)",
-    category: "timeline",
-    year: "2024",
-    date: "Current",
-    content: [
-      "Lead AI Systems Engineer @ Ablebox",
-      "Leading AI systems development",
-      "Building advanced chatbots with real-time data access",
-      "Implementing LLM technologies (llama3, Anthropic Sonnet 3.5, GPT-4)",
-      "Creating real-time factory floor communication analysis systems"
-    ]
-  },
-  {
-    title: "2023",
+    title: "2023-Present",
     category: "timeline",
     year: "2023",
-    date: "November 2023 - December 2023",
+    date: "November 2023 - Present",
     content: [
-      "Lead AI Systems Engineer @ Ablebox (Started November)",
+      "Lead AI Systems Engineer @ Ablebox",
+      "Leading AI systems development and implementation",
+      "Building advanced chatbots with real-time data access",
+      "Implementing LLM technologies (llama3, Anthropic Sonnet 3.5, GPT-4)",
+      "Creating real-time factory floor communication analysis systems",
       "Transitioning to AI leadership role",
       "Spearheading AI implementation strategies",
       "Building foundational AI infrastructure",
