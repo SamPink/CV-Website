@@ -72,8 +72,8 @@ export default function Home() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="space-y-8">
                   <Card className="bg-black/90 border-[#00ff00] p-6">
-                    <h2 className="text-2xl font-bold mb-6 glitch-effect" data-text="EXPERIENCE TIMELINE">
-                      EXPERIENCE TIMELINE
+                    <h2 className="text-2xl font-bold mb-6 glitch-effect" data-text="CAREER TIMELINE">
+                      CAREER TIMELINE
                     </h2>
                     <div className="space-y-6 relative before:content-[''] before:absolute before:left-2 before:top-2 before:w-0.5 before:h-[calc(100%-20px)] before:bg-[#00ff00]/30">
                       {timelineItems.map((item, index) => (
@@ -84,8 +84,14 @@ export default function Home() {
                         >
                           <div className="absolute -left-[1.65rem] top-2 w-3 h-3 bg-[#00ff00] rounded-full shadow-glow" />
                           <div className="bg-black/80 border border-[#00ff00]/30 p-4 rounded-lg group-hover:border-[#00ff00] transition-colors">
-                            <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                            <p className="text-sm text-[#00ff00]/80">{item.content[0]}</p>
+                            <div className="flex justify-between items-start mb-2">
+                              <h3 className="text-lg font-semibold">{item.title}</h3>
+                              {item.date && (
+                                <span className="text-sm text-[#00ff00]/70">{item.date}</span>
+                              )}
+                            </div>
+                            <p className="text-[#00ff00]/90 font-bold">{item.content[0]}</p>
+                            <p className="text-sm text-[#00ff00]/80 mt-2">{item.content[1]}</p>
                           </div>
                         </div>
                       ))}

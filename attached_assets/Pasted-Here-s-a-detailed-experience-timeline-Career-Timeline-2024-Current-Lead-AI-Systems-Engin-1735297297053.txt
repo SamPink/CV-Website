@@ -1,0 +1,97 @@
+Here's a detailed experience timeline:
+
+# Career Timeline
+
+## 2024 (Current)
+**Lead AI Systems Engineer @ Ablebox**
+- Leading AI systems development
+- Building advanced chatbots with real-time data access
+- Implementing LLM technologies (llama3, Anthropic Sonnet 3.5, GPT-4)
+- Creating real-time factory floor communication analysis systems
+
+## 2023
+**Lead AI Systems Engineer @ Ablebox** (Started November)
+- Transitioning to AI leadership role
+- Spearheading AI implementation strategies
+
+**Data Engineer @ Markel** (Until September)
+- Built internal APIs with FastAPI/SQLAlchemy
+- Developed ETL pipelines
+- Implemented Azure CI/CD
+- Docker containerization work
+
+## 2022
+**Data Engineer @ EvolveYou** (February - July)
+- AWS API development
+- User statistics consolidation
+- Tableau reporting
+- Analytics platform integration
+
+## 2021-2022
+**Back-end Developer @ Shelby Finance** (November 2021 - February 2022)
+- Python-based Dash web application
+- AWS Lambda implementation
+- Jira API integration
+- Interactive dashboard creation
+
+## 2020-2021
+**Contract Data Engineer @ GSA Dubai** (Until November 2021)
+- High-performance ETL workflow development
+- ML project for booking cancellations
+- £1+ million annual savings achieved
+- £100+ million bookings pipeline
+
+## 2019-2020
+**Junior Cloud Developer @ ProvenWorks** (October 2019 - May 2020)
+- Initial professional cloud development experience
+
+**Business Intelligence Analyst @ Spire Healthcare** (July - September 2019)
+- Summer position
+- First exposure to business intelligence
+
+## 2017-2019
+**Software Engineer @ GSA** 
+- First professional role while studying
+- Foundation in Python development
+- Early ETL work
+- Initial exposure to data engineering
+
+## Education
+**2018-2021**: BSc Computer Science, University of Reading
+- Machine learning dissertation
+- Java game development
+- C# blockchain project
+
+**2016-2018**: Midhurst Rother College
+
+# Skills Evolution Timeline
+
+### 2017-2019: Foundation Period
+- Basic Python
+- Simple ETL processes
+- Initial database work
+
+### 2019-2021: Development Period
+- Cloud platforms introduction
+- Advanced Python
+- ETL pipeline complexity increase
+
+### 2021-2022: Specialization Period
+- AWS expertise
+- API development
+- Dashboard creation
+- Data engineering maturity
+
+### 2022-2023: Advanced Period
+- FastAPI mastery
+- Docker implementation
+- Azure pipeline expertise
+- Complex data architecture
+
+### 2023-Present: AI Leadership Period
+- LLM integration
+- AI system architecture
+- Team leadership
+- Advanced AI implementation
+
+Would you like me to expand on any particular period or add more technical details to specific roles?
