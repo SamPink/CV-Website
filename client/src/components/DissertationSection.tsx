@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,11 +21,40 @@ export default function DissertationSection() {
   const [numPages, setNumPages] = useState<number>(0);
   const [pageNumber, setPageNumber] = useState(1);
   const [scale, setScale] = useState(1.0);
+  const [isLoading, setIsLoading] = useState(true);
 
   function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
     setNumPages(numPages);
     setPageNumber(1);
+    setIsLoading(false);
   }
+
+  const handleKeyPress = useCallback((event: KeyboardEvent) => {
+    if (!showPdf) return;
+
+    switch (event.key) {
+      case 'ArrowLeft':
+        setPageNumber(prev => Math.max(1, prev - 1));
+        break;
+      case 'ArrowRight':
+        setPageNumber(prev => Math.min(numPages, prev + 1));
+        break;
+      case '+':
+      case '=':
+        setScale(prev => Math.min(2, prev + 0.1));
+        break;
+      case '-':
+        setScale(prev => Math.max(0.5, prev - 0.1));
+        break;
+      default:
+        break;
+    }
+  }, [showPdf, numPages]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [handleKeyPress]);
 
   return (
     <Card className="bg-black/90 border-[#00ff00] p-6">
@@ -45,7 +74,10 @@ export default function DissertationSection() {
             <Button
               variant="outline"
               className="bg-black/90 border-[#00ff00] text-[#00ff00] hover:bg-[#00ff00]/10"
-              onClick={() => setShowPdf(true)}
+              onClick={() => {
+                setShowPdf(true);
+                setIsLoading(true);
+              }}
             >
               <FileText className="w-4 h-4 mr-2" />
               View Full PDF
@@ -71,11 +103,12 @@ export default function DissertationSection() {
                   onClick={() => setPageNumber(Math.max(1, pageNumber - 1))}
                   disabled={pageNumber <= 1}
                   className="bg-black/90 border-[#00ff00] text-[#00ff00] hover:bg-[#00ff00]/10"
+                  title="Previous page (Left arrow)"
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </Button>
-                <span className="text-sm">
-                  Page {pageNumber} of {numPages}
+                <span className="text-sm min-w-[100px] text-center">
+                  {isLoading ? "Loading..." : `Page ${pageNumber} of ${numPages}`}
                 </span>
                 <Button
                   variant="outline"
@@ -83,6 +116,7 @@ export default function DissertationSection() {
                   onClick={() => setPageNumber(Math.min(numPages, pageNumber + 1))}
                   disabled={pageNumber >= numPages}
                   className="bg-black/90 border-[#00ff00] text-[#00ff00] hover:bg-[#00ff00]/10"
+                  title="Next page (Right arrow)"
                 >
                   <ChevronRight className="w-4 h-4" />
                 </Button>
@@ -93,15 +127,19 @@ export default function DissertationSection() {
                   size="sm"
                   onClick={() => setScale(scale => Math.max(0.5, scale - 0.1))}
                   className="bg-black/90 border-[#00ff00] text-[#00ff00] hover:bg-[#00ff00]/10"
+                  title="Zoom out (-)"
                 >
                   <ZoomOut className="w-4 h-4" />
                 </Button>
-                <span className="text-sm">{Math.round(scale * 100)}%</span>
+                <span className="text-sm min-w-[60px] text-center">
+                  {Math.round(scale * 100)}%
+                </span>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => setScale(scale => Math.min(2, scale + 0.1))}
                   className="bg-black/90 border-[#00ff00] text-[#00ff00] hover:bg-[#00ff00]/10"
+                  title="Zoom in (+)"
                 >
                   <ZoomIn className="w-4 h-4" />
                 </Button>
@@ -109,9 +147,15 @@ export default function DissertationSection() {
             </div>
 
             <div className="flex-1 overflow-auto bg-black/50 rounded-lg border-2 border-[#00ff00]/30">
+              {isLoading && (
+                <div className="flex items-center justify-center h-full">
+                  <div className="text-[#00ff00] animate-pulse">Loading PDF...</div>
+                </div>
+              )}
               <Document
                 file="/api/dissertation"
                 onLoadSuccess={onDocumentLoadSuccess}
+                onLoadError={() => setIsLoading(false)}
                 className="flex justify-center"
               >
                 <Page
@@ -120,6 +164,11 @@ export default function DissertationSection() {
                   renderTextLayer={true}
                   renderAnnotationLayer={true}
                   className="shadow-lg"
+                  loading={
+                    <div className="flex items-center justify-center h-[500px]">
+                      <div className="text-[#00ff00] animate-pulse">Loading page {pageNumber}...</div>
+                    </div>
+                  }
                 />
               </Document>
             </div>
