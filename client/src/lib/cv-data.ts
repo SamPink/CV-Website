@@ -11,12 +11,10 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Professional Overview",
     category: "expertise",
     content: [
-      "Dynamic Lead AI Systems Engineer with a proven track record spanning 6+ years in software development and artificial intelligence. Starting as a junior developer in 2017, rapidly progressed through increasingly complex roles to current leadership position.",
-      "Demonstrated expertise in implementing cutting-edge AI solutions, with achievements including:",
-      "• Development of AI systems generating £1M+ in business value",
-      "• Design of enterprise ETL pipelines processing £100M+ annual transactions",
-      "• Leadership of multiple technical teams and successful delivery of 10+ major projects",
-      "Consistently driven innovation across roles, evolving from foundational Python development to advanced AI systems architecture, while maintaining a focus on delivering measurable business impact."
+      "Lead AI Systems Engineer with 6+ years of experience, evolving from Python development to AI leadership.",
+      "• Led AI systems development generating £1M+ in value",
+      "• Built enterprise pipelines handling £100M+ transactions",
+      "• Successfully delivered 10+ major technical projects"
     ]
   },
   {
@@ -27,10 +25,7 @@ export const detailedInfo: DetailedInfo[] = [
     content: [
       "Lead AI Systems Engineer @ Ablebox",
       "Building advanced AI chatbots with real-time data integration",
-      "Leading factory floor communication analysis project",
-      "Managing team of AI/ML engineers",
-      "Spearheading AI strategy and implementation",
-      "Duration: 1 year 2 months"
+      "Leading team of AI/ML engineers"
     ]
   },
   {
@@ -134,20 +129,9 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Technical Expertise",
     category: "expertise",
     content: [
-      "AI/ML Development (2022-Present)",
-      "• LLM Integration: llama3, GPT-4, Anthropic's Sonnet 3.5",
-      "• Real-time AI applications and chatbots",
-      "• Machine Learning model development",
-      "",
-      "Python & Data Engineering (2017-Present)",
-      "• Modern Frameworks: FastAPI, SQLAlchemy, Pydantic",
-      "• ETL Pipeline Design and Implementation",
-      "• API Architecture and Development",
-      "",
-      "Cloud & Infrastructure (2020-Present)",
-      "• AWS: Lambda, EC2, API Gateway",
-      "• Azure: Pipelines, Container Registry, SQL",
-      "• Docker and CI/CD Implementation"
+      "AI/ML Development: LLM integration, real-time AI systems, predictive modeling",
+      "Data Engineering: ETL pipelines, FastAPI/SQLAlchemy, cloud solutions",
+      "Infrastructure: AWS Lambda, Azure Pipelines, Docker orchestration"
     ]
   }
 ];
