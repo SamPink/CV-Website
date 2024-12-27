@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Terminal from "@/components/Terminal";
+import AIChat from "@/components/Terminal";
 import ParticleBackground from "@/components/ParticleBackground";
 import TypewriterText from "@/components/TypewriterText";
 import ProjectCard from "@/components/ProjectCard";
@@ -14,7 +14,6 @@ export default function Home() {
   const [selectedInfo, setSelectedInfo] = useState<DetailedInfo>();
 
   useEffect(() => {
-    // After welcome message completes, show the main content
     const timer = setTimeout(() => {
       setShowWelcome(false);
       setShowContent(true);
@@ -77,9 +76,9 @@ export default function Home() {
                           <SkillBar 
                             skill={skill} 
                             progress={skill === "AI & LLMs" ? 95 : 
-                                    skill === "Python & FastAPI Development" ? 92 :
-                                    skill === "Business Process Automation" ? 90 :
-                                    skill === "Geospatial Data Analysis" ? 88 : 85} 
+                                      skill === "Python & FastAPI Development" ? 92 :
+                                      skill === "Business Process Automation" ? 90 :
+                                      skill === "Geospatial Data Analysis" ? 88 : 85} 
                           />
                         </div>
                       ))}
@@ -120,7 +119,7 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <Terminal />
+                  <AIChat />
                 </div>
               </div>
             )}

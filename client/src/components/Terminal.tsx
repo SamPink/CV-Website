@@ -2,19 +2,48 @@ import { useState, useRef, useEffect } from "react";
 import { commands } from "@/lib/terminal-commands";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-interface TerminalLine {
+interface ChatLine {
   type: 'input' | 'output';
   content: string;
 }
 
-export default function Terminal() {
-  const [lines, setLines] = useState<TerminalLine[]>([
-    { type: 'output', content: 'Welcome to the interactive CV terminal. Type "help" for available commands.' }
-  ]);
+export default function AIChat() {
+  const [lines, setLines] = useState<ChatLine[]>([]);
   const [currentInput, setCurrentInput] = useState('');
   const [isProcessing, setIsProcessing] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const scrollAreaRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Send initial welcome message
+    const initializeChat = async () => {
+      setIsProcessing(true);
+      try {
+        const response = await fetch('/api/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ 
+            message: "Give a warm welcome message as Samuel Pink's AI assistant, mentioning that you can answer questions about his skills, experience, and achievements. Keep it concise." 
+          }),
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+          setLines([{ type: 'output', content: data.response }]);
+        } else {
+          setLines([{ type: 'output', content: "Hello! I'm Samuel's AI assistant. Type 'help' for available commands or ask me anything about Samuel's experience and skills." }]);
+        }
+      } catch (error) {
+        setLines([{ type: 'output', content: "Hello! I'm Samuel's AI assistant. Type 'help' for available commands or ask me anything about Samuel's experience and skills." }]);
+      } finally {
+        setIsProcessing(false);
+      }
+    };
+
+    initializeChat();
+  }, []);
 
   useEffect(() => {
     if (scrollAreaRef.current) {
@@ -69,6 +98,9 @@ export default function Terminal() {
 
   return (
     <div className="bg-black border-2 border-[#00ff00] rounded-lg p-4 h-[500px] flex flex-col">
+      <h2 className="text-xl font-bold mb-4 text-[#00ff00] glitch-effect" data-text="AI Assistant">
+        AI Assistant
+      </h2>
       <ScrollArea className="flex-1">
         <div ref={scrollAreaRef} className="space-y-2">
           {lines.map((line, i) => (
@@ -93,6 +125,7 @@ export default function Terminal() {
           onChange={(e) => setCurrentInput(e.target.value)}
           onKeyPress={handleKeyPress}
           className="flex-1 bg-transparent border-none outline-none text-[#00ff00] font-mono"
+          placeholder="Ask me anything about Samuel's experience..."
           disabled={isProcessing}
           autoFocus
         />
