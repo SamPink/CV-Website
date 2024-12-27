@@ -12,14 +12,14 @@ export function registerRoutes(app: Express): Server {
       Core expertise: AI/ML, Python, Data Engineering, Cloud Architecture
       Notable achievements: Built AI chatbot with N8N, Real-time communication analysis with Whisper, Created dev-gpt (200+ GitHub stars)`;
 
-      const response = await fetch('https://api.openai.com/v1/chat/completions', {
+      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+          'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          model: "gpt-3.5-turbo",
+          model: "llama-3.3-70b-versatile",
           messages: [
             {
               role: 'system',
@@ -36,7 +36,20 @@ export function registerRoutes(app: Express): Server {
       });
 
       const data = await response.json();
-      res.json({ response: data.choices[0].message.content });
+
+      // Handle API error responses
+      if (!response.ok) {
+        console.error('Groq API Error:', data);
+        throw new Error(data.error?.message || 'API request failed');
+      }
+
+      // Safely access the response content
+      const content = data.choices?.[0]?.message?.content;
+      if (!content) {
+        throw new Error('Invalid response format from API');
+      }
+
+      res.json({ response: content });
     } catch (error) {
       console.error('Chat API Error:', error);
       res.status(500).json({ error: 'Failed to process chat request' });
