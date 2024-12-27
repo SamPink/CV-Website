@@ -11,11 +11,12 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Total Experience",
     category: "expertise",
     content: [
-      "6+ Years Professional Experience",
-      "Started as Software Engineer in 2017",
-      "Progressed to Lead AI Systems Engineer",
-      "Concurrent work and study 2017-2021",
-      "Specialized in AI/ML since 2022"
+      "6+ Years Total Professional Experience (2017-Present)",
+      "Python Development: 6+ years (Started 2017)",
+      "Data Engineering: 4+ years (Started 2019)",
+      "Cloud Platforms: 3+ years (Started 2020)",
+      "AI/ML Development: 2+ years intensive (Started 2022)",
+      "Technical Leadership: 1+ year (Started 2023)"
     ]
   },
   {
@@ -130,11 +131,11 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Technical Skills Growth",
     category: "expertise",
     content: [
-      "Python Development (6+ years): From basic ETL to advanced AI systems",
-      "Data Engineering (4+ years): Built enterprise-scale data pipelines",
-      "Cloud Platforms (3+ years): AWS Lambda, Azure Pipelines, Docker",
-      "AI/ML (2+ years intensive): LLMs, real-time AI, ML models",
-      "API Development (2+ years): FastAPI, REST APIs, authentication systems"
+      "Python Development (6+ years, 2017-Present): Evolved from ETL scripts to advanced AI systems",
+      "Data Engineering (4+ years, 2019-Present): Progressed from basic pipelines to enterprise-scale systems",
+      "Cloud Platforms (3+ years, 2020-Present): AWS Lambda, Azure Pipelines, Docker expertise",
+      "AI/ML (2+ years intensive, 2022-Present): LLMs, real-time AI, ML model development",
+      "API Development (2+ years, 2021-Present): FastAPI, REST APIs, authentication systems"
     ]
   }
 ];
