@@ -6,6 +6,12 @@ export function registerRoutes(app: Express): Server {
   app.post('/api/chat', async (req, res) => {
     try {
       const { message } = req.body;
+
+      if (!process.env.GROQ_API_KEY) {
+        console.error('Missing GROQ_API_KEY environment variable');
+        return res.status(500).json({ error: 'API configuration error' });
+      }
+
       const systemPrompt = `You are an AI assistant for Samuel Pink's CV. You have expertise in all of Samuel's skills, experience, achievements, and education.
       Be precise, professional, and focus on highlighting relevant experience and skills when answering questions.
 
@@ -18,7 +24,7 @@ export function registerRoutes(app: Express): Server {
       - Dissertation: Developed a machine learning model for global student accommodations to predict booking cancellations with 80% accuracy
       - Key modules: Networking and Advanced Java Programming, including a Java game project and C# blockchain project`;
 
-      const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      const apiResponse = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${process.env.GROQ_API_KEY}`,
@@ -41,24 +47,33 @@ export function registerRoutes(app: Express): Server {
         })
       });
 
-      const data = await response.json();
-
-      // Handle API error responses
-      if (!response.ok) {
-        console.error('Groq API Error:', data);
-        throw new Error(data.error?.message || 'API request failed');
+      if (!apiResponse.ok) {
+        const errorData = await apiResponse.text();
+        console.error('Groq API Error:', {
+          status: apiResponse.status,
+          statusText: apiResponse.statusText,
+          error: errorData
+        });
+        throw new Error(`API request failed: ${apiResponse.status} ${apiResponse.statusText}`);
       }
+
+      const data = await apiResponse.json();
 
       // Safely access the response content
       const content = data.choices?.[0]?.message?.content;
       if (!content) {
+        console.error('Invalid API response format:', data);
         throw new Error('Invalid response format from API');
       }
 
       res.json({ response: content });
     } catch (error) {
       console.error('Chat API Error:', error);
-      res.status(500).json({ error: 'Failed to process chat request' });
+      // Send a user-friendly error message
+      res.status(500).json({ 
+        error: 'Failed to process chat request',
+        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+      });
     }
   });
 
