@@ -11,7 +11,7 @@ export const detailedInfo: DetailedInfo[] = [
     title: "Professional Overview",
     category: "expertise",
     content: [
-      "6+ Years Total Professional Experience (2017-Present)",
+      "7+ Years Total Professional Experience (2017-Present)",
       "Led development of AI systems generating £1M+ in business value",
       "Created enterprise ETL pipelines handling £100M+ in annual transactions",
       "Built and maintained multiple production APIs and data platforms",

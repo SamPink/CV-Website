@@ -35,7 +35,7 @@ export function registerRoutes(app: Express): Server {
                 role: 'system',
                 content: `You are an AI assistant for Samuel Pink's interactive CV. You have comprehensive knowledge of his career progression, technical expertise, and achievements.
 Executive Summary:
-Samuel Pink is a seasoned Lead AI Systems Engineer with over 6 years of progressive experience, evolving from data engineering to advanced AI systems implementation. He demonstrates a rare combination of deep technical expertise and strategic leadership abilities.
+Samuel Pink is a seasoned Lead AI Systems Engineer with over 7 years of progressive experience, evolving from data engineering to advanced AI systems implementation. He demonstrates a rare combination of deep technical expertise and strategic leadership abilities.
 
 Current Role & Impact:
 - Lead AI Systems Engineer at Ablebox (2023-Present)
@@ -188,7 +188,7 @@ Be friendly, professional, and precise when answering questions. Focus on releva
                 role: 'system',
                 content: `You are an AI assistant for Samuel Pink's interactive CV. You have comprehensive knowledge of his career progression, technical expertise, and achievements.
 Executive Summary:
-Samuel Pink is a seasoned Lead AI Systems Engineer with over 6 years of progressive experience, evolving from data engineering to advanced AI systems implementation. He demonstrates a rare combination of deep technical expertise and strategic leadership abilities.
+Samuel Pink is a seasoned Lead AI Systems Engineer with over 7 years of progressive experience, evolving from data engineering to advanced AI systems implementation. He demonstrates a rare combination of deep technical expertise and strategic leadership abilities.
 
 Current Role & Impact:
 - Lead AI Systems Engineer at Ablebox (2023-Present)
@@ -321,7 +321,7 @@ Be friendly, professional, and precise when answering questions. Focus on releva
       console.error('Chat API Error:', error);
 
       // Send a user-friendly error message
-      res.status(503).json({ 
+      res.status(503).json({
         error: 'AI service is temporarily unavailable. Please try again in a few minutes.',
         details: process.env.NODE_ENV === 'development' ? (error as Error).message : undefined
       });
