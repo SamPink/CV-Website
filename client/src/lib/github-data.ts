@@ -8,26 +8,32 @@ interface Repository {
   html_url: string;
 }
 
-interface UserStats {
+const FEATURED_REPOS = [
+  "dev-gpt",
+  "VocalNews",
+  "llm-colosseum",
+  "Visionary-Assistant",
+  "ETHGPT"
+];
+
+async function fetchGitHubStats(username: string): Promise<{
+  popularRepos: Repository[];
   totalStars: number;
   totalRepos: number;
   topLanguages: { [key: string]: number };
-  popularRepos: Repository[];
-}
-
-async function fetchGitHubStats(username: string): Promise<UserStats> {
+}> {
   const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
   if (!response.ok) {
     throw new Error('Failed to fetch GitHub data');
   }
 
   const repos: Repository[] = await response.json();
-  
-  const stats: UserStats = {
+
+  const stats = {
     totalStars: 0,
     totalRepos: repos.length,
-    topLanguages: {},
-    popularRepos: []
+    topLanguages: {} as { [key: string]: number },
+    popularRepos: [] as Repository[]
   };
 
   // Calculate total stars and collect languages
@@ -38,10 +44,10 @@ async function fetchGitHubStats(username: string): Promise<UserStats> {
     }
   });
 
-  // Get top 5 repos by stars
-  stats.popularRepos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
-    .slice(0, 5);
+  // Sort and filter featured repos
+  stats.popularRepos = FEATURED_REPOS
+    .map(name => repos.find(repo => repo.name === name))
+    .filter((repo): repo is Repository => repo !== undefined);
 
   return stats;
 }

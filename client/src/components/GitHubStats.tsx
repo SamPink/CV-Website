@@ -29,7 +29,7 @@ export default function GitHubStats() {
   return (
     <Card className="bg-black/50 border-[#00ff00] p-6">
       <h2 className="text-2xl font-bold mb-4 glitch-effect" data-text="GITHUB STATS">GITHUB STATS</h2>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div className="flex items-center space-x-2">
           <Star className="w-5 h-5 text-[#00ff00]" />
@@ -48,7 +48,7 @@ export default function GitHubStats() {
       </div>
 
       <div className="space-y-4">
-        <h3 className="text-lg font-semibold mb-2">Popular Repositories</h3>
+        <h3 className="text-lg font-semibold mb-2">Featured Repositories</h3>
         {stats.popularRepos.map((repo, index) => (
           <motion.div
             key={repo.name}
