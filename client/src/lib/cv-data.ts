@@ -20,10 +20,10 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
-    title: "2024 (Current)",
+    title: "2023-Present",
     category: "timeline",
-    year: "2024",
-    date: "2024 (Current)",
+    year: "2023",
+    date: "November 2023 - Present",
     content: [
       "Lead AI Systems Engineer @ Ablebox",
       "Leading AI systems development",
@@ -33,16 +33,12 @@ export const detailedInfo: DetailedInfo[] = [
     ]
   },
   {
-    title: "2023",
+    title: "2023 (Earlier)",
     category: "timeline",
     year: "2023",
-    date: "January 2023 - December 2023",
+    date: "January 2023 - September 2023",
     content: [
-      "Lead AI Systems Engineer @ Ablebox (Started November)",
-      "- Transitioning to AI leadership role",
-      "- Spearheading AI implementation strategies",
-      "",
-      "Data Engineer @ Markel (Until September)",
+      "Data Engineer @ Markel",
       "- Built internal APIs with FastAPI/SQLAlchemy",
       "- Developed ETL pipelines",
       "- Implemented Azure CI/CD",
